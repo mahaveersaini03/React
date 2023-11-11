@@ -1,30 +1,33 @@
 import React from 'react'
+import Header from './Header';
+import Product  from './Product';
+import './Products.css';
 
 const DUMMY_PRODUCTS = [
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-red-surface-1bBCtUAUMFI",
+        image : "./images/phone.jpg",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
     },
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-red-surface-1bBCtUAUMFI",
+        image : "https://unsplash.com/photos/black-iphone-5-on-brown-wooden-table-A6qNzfJXRGQ",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
     },
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-red-surface-1bBCtUAUMFI",
+        image : "https://unsplash.com/photos/black-iphone-5-on-brown-wooden-table-A6qNzfJXRGQ",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
     },
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-red-surface-1bBCtUAUMFI",
+        image : "https://unsplash.com/photos/black-iphone-5-on-brown-wooden-table-A6qNzfJXRGQ",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
@@ -35,9 +38,9 @@ const Products = () => {
     <div className="main">
             <ul>
                 {DUMMY_PRODUCTS.map((product,key) =>
-                <li key={key={}}>
+                <li key={key}>
 
-                    <Product id = {key} name = {product.name} image = {product.image} />
+                    <Product id = {key} name = {product.name} image = {product.image} price = {product.price} description = {product.description} quantity = {product.quantity} />
                 </li>
                 )
                 
