@@ -6,28 +6,28 @@ import './Products.css';
 const DUMMY_PRODUCTS = [
     {
         name: "Mobile Phone",
-        image : "./images/phone.jpg",
+        image : "../images/phone.jpg",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
     },
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/black-iphone-5-on-brown-wooden-table-A6qNzfJXRGQ",
+        image : "../images/phone.jpg",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
     },
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/black-iphone-5-on-brown-wooden-table-A6qNzfJXRGQ",
+        image : "../images/phone.jpg",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
     },
     {
         name: "Mobile Phone",
-        image : "https://unsplash.com/photos/black-iphone-5-on-brown-wooden-table-A6qNzfJXRGQ",
+        image : "../images/phone.jpg",
         price: 2000,
         description: "This is new mobile phone",
         quantity : 12,
@@ -40,7 +40,13 @@ const Products = () => {
                 {DUMMY_PRODUCTS.map((product,key) =>
                 <li key={key}>
 
-                    <Product id = {key} name = {product.name} image = {product.image} price = {product.price} description = {product.description} quantity = {product.quantity} />
+                    <Product 
+                    id = {key} 
+                    name = {product.name} 
+                    image = {product.image} 
+                    price = {product.price} 
+                    description = {product.description} 
+                    xquantity = {product.quantity} />
                 </li>
                 )
                 
